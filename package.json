@@ -1,0 +1,14 @@
+{
+  "name": "searchtree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha-sinon-chai --mocha *.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha-sinon-chai": "^3.0.0"
+  }
+}
