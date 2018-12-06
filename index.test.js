@@ -5,6 +5,7 @@ const search = require('./index');
 
 const complexQuery = require('./complexQuery');
 const simpleQuery = require('./simpleQuery');
+const allFieldQuery = require('./allFieldQuery');
 
 describe('When searching a tree', () => {
     describe('and the tree is complex', () => {
@@ -42,18 +43,8 @@ describe('When searching a tree', () => {
     })
 
     describe('and field is missing', () => {
-        const simpleQuery = [{
-            op: "AND",
-            leaves: [
-                {
-                    op: "MATCH",
-                    value: "Au"
-                }
-            ]
-        }];
-
         it('should find all results that have a partial match', () => {
-            expect(search(data, simpleQuery))
+            expect(search(data, allFieldQuery))
                 .to.deep.equal([
                     {
                         Manufacturer: "Audi",
