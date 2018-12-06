@@ -9,22 +9,22 @@ const allFieldQuery = require('./allFieldQuery');
 
 describe('When searching a tree', () => {
     describe('and the tree is complex', () => {
-        it('should find all results', () => {
+        it('should find all matching results', () => {
             expect(search(data, complexQuery))
                 .to.deep.have.members([
-                    { Manufacturer: 'Opel', transmittionType: 'Manual' },
-                    { Manufacturer: 'Audi', transmittionType: 'Manual' },
-                    { Manufacturer: 'Vauxhall', transmittionType: 'Manual' },
-                    { Manufacturer: 'Audi', transmittionType: 'Automatic' }
+                    { Manufacturer: 'Opel', transmissionType: 'Manual' },
+                    { Manufacturer: 'Audi', transmissionType: 'Manual' },
+                    { Manufacturer: 'Vauxhall', transmissionType: 'Manual' },
+                    { Manufacturer: 'Audi', transmissionType: 'Automatic' }
                 ]);
         });
     });
 
     describe('and it is a very simple tree', () => {
-        it('should find all results', () => {
+        it('should find all matching results', () => {
             expect(search(data, simpleQuery))
                 .to.deep.equal([
-                    { Manufacturer: 'Opel', transmittionType: 'Manual' }
+                    { Manufacturer: 'Opel', transmissionType: 'Manual' }
                 ]);
         });
     })
@@ -48,19 +48,19 @@ describe('When searching a tree', () => {
                 .to.deep.equal([
                     {
                         Manufacturer: "Audi",
-                        transmittionType: "Manual"
+                        transmissionType: "Manual"
                     },
                     {
                         Manufacturer: "Vauxhall",
-                        transmittionType: "Manual"
+                        transmissionType: "Manual"
                     },
                     {
                         Manufacturer: "BMW",
-                        transmittionType: "Automatic"
+                        transmissionType: "Automatic"
                     },
                     {
                         Manufacturer: "Audi",
-                        transmittionType: "Automatic"
+                        transmissionType: "Automatic"
                     }
                 ]);
         });

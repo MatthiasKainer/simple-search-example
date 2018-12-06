@@ -1,23 +1,23 @@
 const data = [
     {
         Manufacturer: "Opel",
-        transmittionType: "Manual"
+        transmissionType: "Manual"
     },
     {
         Manufacturer: "Audi",
-        transmittionType: "Manual"
+        transmissionType: "Manual"
     },
     {
         Manufacturer: "Vauxhall",
-        transmittionType: "Manual"
+        transmissionType: "Manual"
     },
     {
         Manufacturer: "BMW",
-        transmittionType: "Automatic"
+        transmissionType: "Automatic"
     },
     {
         Manufacturer: "Audi",
-        transmittionType: "Automatic"
+        transmissionType: "Automatic"
     },
 ];
 

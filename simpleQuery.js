@@ -1,10 +1,5 @@
 module.exports = [{
-    op: "AND",
-    leaves: [
-        {
-            op: "MATCH",
-            field: "Manufacturer",
-            value: "Ope"
-        }
-    ]
+    op: "MATCH",
+    field: "Manufacturer",
+    value: "Ope"
 }];

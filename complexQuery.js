@@ -17,14 +17,9 @@ module.exports = [{
             ]
         },
         {
-            op: "OR",
-            leaves: [
-                {
-                    op: "MATCH",
-                    field: "transmittionType",
-                    value: "Manual"
-                }
-            ]
+            op: "MATCH",
+            field: "transmissionType",
+            value: "Manual"
         }
     ]
 }];
